@@ -1,0 +1,19 @@
+@import "../../variables.scss";
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  background-color: $secondary-color;
+  height: 100px;
+  border-bottom: 4px solid $border-color;
+
+  a {
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size: 70px;
+    font-weight: 700;
+    color: $primary-color;
+  }
+}

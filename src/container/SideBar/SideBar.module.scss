@@ -1,0 +1,34 @@
+@import "../../variables.scss";
+.sidebar {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  height: 100vh;
+  background-color: $secondary-color;
+  color: $white-color;
+  font-size: 30px;
+  font-weight: 700;
+  border-right: 4px solid $border-color;
+
+  a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 20px;
+    color: $white-color;
+  }
+  nav{
+    width: 90%;
+  }
+}
+
+.item {
+  border-radius: 100px;
+  margin-top: 20px;
+  background-color: $secondary-color;
+  &:hover {
+    background-color: $primary-color;
+    cursor: pointer;
+  }
+}
