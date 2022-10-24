@@ -7,6 +7,7 @@ import App from "./App/App";
 import ErrorPage from "./pages/error-page";
 import Movies from "./pages/Movies";
 import Favourites from "./pages/Favourites";
+import AuthProvider from "./store/AuthProvider";
 
 import "./index.scss";
 
@@ -32,6 +33,8 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>
 );
